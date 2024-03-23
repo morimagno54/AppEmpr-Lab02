@@ -1,0 +1,53 @@
+﻿<Window x:Class="App1.OpIngresos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:App1"
+        mc:Ignorable="d"
+        Title="OpIngresos" Height="600" Width="800">
+    <Grid>
+        <StackPanel HorizontalAlignment="Left" Margin="130,10,10,0">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type TextBlock}">
+                    <Setter Property="Margin" Value="100,30,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+            <TextBlock Height="23" Name="hdngTipoDocumento" Text="Tipo de Documento" VerticalAlignment="Top" FontSize="17" FontStretch="ExtraCondensed"/>
+            <TextBlock Height="23" Name="hdngNroDocumento" Text="Número de Documento" VerticalAlignment="Top" FontSize="17" FontStretch="ExtraCondensed"/>
+            <TextBlock Height="23" Name="hdngPlaca" Text="Placa" VerticalAlignment="Top" FontSize="17" FontStretch="ExtraCondensed"/>
+            <TextBlock Height="23" Name="hdngTurno" Text="Turno" VerticalAlignment="Top" FontSize="17" FontStretch="ExtraCondensed"/>
+            <TextBlock Height="23" Name="hdngNombreConductor" Text="Nombre de Conductor" VerticalAlignment="Top" FontSize="17" FontStretch="ExtraCondensed"/>
+            <TextBlock Height="23" Name="hdngNombreCliente" Text="Nombre Cliente" VerticalAlignment="Top" FontSize="17" FontStretch="ExtraCondensed"/>
+            <TextBlock Height="23" Name="hdngFechayHora" Text="Fecha y Hora" VerticalAlignment="Top" FontSize="17" FontStretch="ExtraCondensed"/>
+            <TextBlock Height="23" Name="hdngPeso" Text="Peso" VerticalAlignment="Top" FontSize="17" FontStretch="ExtraCondensed"/>
+        </StackPanel>
+        
+        <StackPanel HorizontalAlignment="Right" Margin="0,10,130,0">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type TextBox}">
+                    <Setter Property="Margin" Value="0,30,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+            <TextBox Height="23" Name="txtboxDocumento" VerticalAlignment="Top" Width="247" />
+            <TextBox Height="23" Name="txtboxNroDocumento" VerticalAlignment="Top" Width="247" />
+            <TextBox Height="23" Name="txtboxPlaca" VerticalAlignment="Top" Width="247" />
+            <TextBox Height="23" Name="txtboxTurno" VerticalAlignment="Top" Width="247" />
+            <TextBox Height="23" Name="txtboxNombreConductor" VerticalAlignment="Top" Width="247" />
+            <TextBox Height="23" Name="txtboxNombreCliente" VerticalAlignment="Top" Width="247" />
+            <TextBox Height="23" Name="txtboxFechayHora" VerticalAlignment="Top" Width="247" />
+            <TextBox Height="23" Name="txtboxPeso" VerticalAlignment="Top" Width="247" />
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,100">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Button}">
+                    <Setter Property="Margin" Value="50,0,0,0"/>
+                </Style>
+            </StackPanel.Resources>
+
+            <Button Content="Registrar" Height="23" Name="btnLogin" Width="70"/>
+            <Button Content="Salir" Height="23" Name="btnSalir" Width="70"/>
+        </StackPanel>
+    </Grid>
+</Window>
